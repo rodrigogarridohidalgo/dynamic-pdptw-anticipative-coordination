@@ -81,6 +81,16 @@ Static requests have \(\rho_r=0\).
 
 LC101 was selected as the main case because it provides an intermediate compatibility regime.
 
-## Redistribution note
+## Raw-data availability
 
-The raw benchmark files originate from SINTEF / Li & Lim and are not authored by this repository. Before public archival release, verify whether direct redistribution of copied raw instance files is permitted. If not, remove `data/raw/*.txt` and retain only source attribution plus a download script.
+The original Li & Lim benchmark files are not redistributed in this repository.
+
+For reproducibility, `scripts/download_li_lim.sh` downloads the required instances directly from the SINTEF benchmark site and places them in `data/raw/`.
+
+The files used are:
+
+- `lc101.txt`
+- `lr101.txt`
+- `lrc101.txt`
+
+Because `data/raw/*.txt` is excluded by `.gitignore`, locally downloaded benchmark files remain outside version control.

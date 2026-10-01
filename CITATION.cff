@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated manuscript and this software repository."
+title: "Dynamic PDPTW Anticipative Coordination"
+type: software
+authors:
+  - family-names: Garrido
+    given-names: Rodrigo A.
+repository-code: "https://github.com/rodrigogarridohidalgo/dynamic-pdptw-anticipative-coordination"
+license: "NOASSERTION"

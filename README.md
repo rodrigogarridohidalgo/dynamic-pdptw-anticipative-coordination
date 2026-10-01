@@ -148,11 +148,15 @@ At \(\alpha=0.2\), the residual gap is explained by intertemporal complementarit
 
 ## Reproduction
 
-Use Python 3.11:
+Use Python 3.11.
 
-`python -m pip install -r requirements.txt`
+Install the required packages with `python -m pip install -r requirements.txt`.
 
-The original benchmark instances belong in `data/raw/`. Derived instances, optimization outputs, and figures are stored under `data/derived/` and `results/`.
+Then run the complete pipeline with `bash scripts/run_all.sh`.
+
+If the required Li & Lim benchmark files are not present in `data/raw/`, the pipeline downloads `lc101.txt`, `lr101.txt`, and `lrc101.txt` automatically from the SINTEF benchmark site before validation.
+
+Derived instances, optimization outputs, and figures are written under `data/derived/` and `results/`.
 
 ## Repository structure
 
