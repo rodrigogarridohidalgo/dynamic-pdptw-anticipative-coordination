@@ -6,7 +6,13 @@ cd "$ROOT"
 
 PYTHON="${PYTHON:-python}"
 
-echo "== 1. Validate raw benchmark =="
+echo "== 1. Obtain and validate raw benchmark =="
+
+if [[ ! -f data/raw/lc101.txt || ! -f data/raw/lr101.txt || ! -f data/raw/lrc101.txt ]]; then
+    echo "Li & Lim raw instances not found; downloading from SINTEF..."
+    bash scripts/download_li_lim.sh
+fi
+
 $PYTHON scripts/validate_li_lim.py
 
 echo "== 2. Generate LC101 dynamic instance =="
